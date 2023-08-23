@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Wisdom Superspeciality Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <img src="imgs/logo.jpg" alt="Loading Screen Image">
+    </div>
+    <section class="ambulance">
+        <div class="emergency">
+            <div class="amb">
+                <p>Call an Ambulance right now:</p>
+            </div>
+            <div class="location">
+                <p>Reach here right now:</p>
+            </div>
+        </div>
+    </section>
+    <section class="navd" id="navbar">
+        <img src="imgs/logo.jpg" alt="">
+        <div class="navd-wrap">
+            <div class="dropdown">
+            <span class="no"><a href="home.html">HOME&#8595;</a></span>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+            </div>
+            <div class="dropdown1">
+            <span class="no"><a href="spec.html">SPECIALIZATIONS&#8595;</a></span>
+            <div class="dropdown-content1">
+                <a href="#">Option 1</a>
+                <a href="#">Option2</a>
+                <a href="#">Option3</a>
+                <a href="#">Option1</a>
+                <a href="#">Option2</a>
+                <a href="#">Option3</a>
+                <a href="#">Option1</a>
+                <a href="#">Option2</a>
+                <a href="#">Option3</a>
+                <a href="#">Option1</a>
+                <a href="#">Option2</a>
+                <a href="#">Option3</a>
+            </div>
+            </div>
+            <div class="dropdown2">
+            <span class="no"><a href="doctors.html">DOCTORS&#8595;</a></span>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+            </div>
+            <div class="dropdown3">
+            <span class="no"><a href="appointment.html">APPOINTMENT&#8595;</a></span>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+            </div>
+            <div class="dropdown4">
+            <span class="no"><a href="about.html">ABOUT&#8595;</a></span>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <h6 class="navd-contact1"><span class="fas" style="color: white;">&#x1F464; </span> APPOINTMENT</h6>
+         <h6 class="navd-contact"><span class="fas" style="color: white;">&#x1F4DE;</span> CONTACT</h6>       
+         <h6 class="navd-contact"><span class="fas" style="color: white;">&#x2630;</span></h6>       
+    </section>
+
+    <section class="main">
+        <div class="slideshow-container">
+            <div class="mySlides fade gradient">
+              <div class="numbertext">1 / 3</div>
+              <img src="imgs/home1.jpg">
+              <div class="text">Exploring Medical Frontiers <br> with Advanced Technology.</div>
+              <p class="text1">Venturing into uncharted medical realms, we pioneer break- <br>throughs with advanced technology, shaping a healthier tomorrow.</p>
+              <p class="text2">&#x1F4C5; Book Appointment</p>
+            </div>
+            <div class="mySlides fade gradient">
+              <div class="numbertext">2 / 3</div>
+              <img src="imgs/home2.jpg" >
+              <div class="text">Every Detail in our Facility <br>aids your Healing Journey.</div>
+              <p class="text1">Our commitment to your well-being is reflected in every aspect,<br> from our hospital beds' comfort to our exceptional service quality.</p>
+              <p class="text2">&#x1F4C5; Book Appointment</p>
+            </div>
+            <div class="mySlides fade gradient">
+              <div class="numbertext">3 / 3</div>
+              <img src="imgs/home3.jpg" width="4500px">
+              <div class="text">Acquire Expert Treatment <br> Tailored Specially for you.</div>
+              <p class="text1">With a team of expert doctors, you can find comfort in knowing <br> that specialized care awaits you, ensuring your well-being.</p>
+              <p class="text2">&#x1F4C5; Book Appointment</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div class="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+    </section>
+
+    <section class="content">
+        <h1>content time</h1>
+    </section>
+
+
+
+
+
+
+    <section class="footer">
+        <div class="footer-left">
+            <img src="imgs/logo.jpg" alt="">
+            <p>_____________________________________________________________________________</p>
+        </div>
+        <div class="right">
+            <h4>Address:</h4>
+            <h5>WINDOW KING, PROFESSIONAL WINDOW CLEANING,</h5>
+            <h4>Phone:</h4>
+            <h5>+91 9999999990</h5>
+        </div> 
+    </section>
+
+    <section class="footerbottom">
+        <h3>BHAVESHREE © 2023. Allright Reserved.</h3>
+        <h3>Design and Development By WEBINN</h3>
+    </section>
+    
+</body>
+<script>
+    let slideIndex = 1;
+    let timeoutId = null;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    
+    showSlides();
+    
+    function currentSlide(index) {
+        slideIndex = index;
+        showSlides();
+    }
+    
+    function plusSlides(step) {
+        if (step < 0) {
+            slideIndex -= 2;
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+        }
+        showSlides();
+    }
+    
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    </script>
+</html>
